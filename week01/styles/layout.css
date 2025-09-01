@@ -1,0 +1,46 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+header{
+    background-color: #474747;
+}
+header h1{
+    color: white;
+    height: 80px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px;
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header nav{
+    padding: 9px 0;
+    background-color: black;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+main h2:first-child{
+    flex: 3;
+    background-color: #bdbdbd;
+    margin: 0;
+}
+main h2:last-child{
+    flex: 1;
+    background-color: #f7f2f2;
+    margin: 0;
+}
+footer{
+    background-color: #474747;
+    text-align: center;
+    color: white;
+}
