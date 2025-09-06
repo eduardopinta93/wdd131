@@ -1,0 +1,78 @@
+:root {
+    --main-color: #0F4373;
+    --nav-color: #27271F;
+    --text-color: #FBFCF8;
+    --secundary-color: #EEE30D;
+    
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: var(--main-color);
+    color: var(--text-color)
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    background-color: var(--nav-color);
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+section.card{
+    border-radius: 10px;
+    border: solid 1px var(--nav-color);
+}
+section h2{
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 0;
+    border-radius: 10px 10px 0 0 ;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.about-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+section h3{
+    text-align: center;
+}
+.palmira{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 200px 50px;
+}
+footer{
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--text-color);
+}
