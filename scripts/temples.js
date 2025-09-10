@@ -14,5 +14,5 @@ hamburguerBtn.addEventListener("click", () =>{
     const isOpen = navMenu.classList.contains("open");
     hamburguerBtn.textContent = isOpen ? "✕" : "☰"
     hamburguerBtn.setAttribute("aria-expanded", isOpen);
-    document.querySelector("header p").style.display = isOpen ? "none" : "block";
+    document.querySelector("header h1").style.display = isOpen ? "none" : "block";
 });
