@@ -13,20 +13,12 @@
     nav a{
         flex: 1 1 100%;
     }
-    nav a:hover{
-    background-color: #110642;
-    border-radius: 7px;
-    }
     .gallery {
-        display: grid;
         grid-template-columns: repeat(3, 220px);
         justify-content: center;
         text-align: center;
         color: var(--main-color);
         
-    }
-    main h2{
-        text-align: center;
     }
     #hamburguer{
         display: none;
