@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Colombia | Jesus Eduardo Pinta Molina</title>
+    <meta name="description" content="Country Page project about Colombia. Includes geographic data, population, culture, and current weather information. Created by Jesus Eduardo Pinta Molina.">
+    <meta name="author" content="Jesus Eduardo Pinta Molina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/country.css">
+    <script src="scripts/country.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Colombia</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/colombia-large.webp" media="(min-width: 1024px)">
+            <source srcset="images/colombia-medium.webp" media="(min-width: 600px)">
+            <img src="images/colombia-small.webp" alt="caño cristales colombia" width="2048" height="1365">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+
+            <div class="data-item">
+                <span class="label">Area:</span>
+                <span class="value">1,141,748 sq km</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Population:</span>
+                <span class="value">≈52,500,000</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Capital:</span>
+                <span class="value">Bogotá</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Languages:</span>
+                <span class="value">Spanish</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Currency:</span>
+                <span class="value">Colombian Peso (COP)</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Time Zone:</span>
+                <span class="value">UTC-5</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Calling Code:</span>
+                <span class="value">+57</span>
+            </div>
+
+            <div class="data-item">
+                <span class="label">Internet TLD:</span>
+                <span class="value">.co</span>
+            </div>
+
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon-mobile" src="images/icon-mobile.svg" alt="Weather icon">
+
+            <div class="weather-item">
+                <span class="label">Temperature:</span>
+                <span class="value">22°C</span>
+            </div>
+
+            <div class="weather-item">
+                <span class="label">Conditions:</span>
+                <span class="value">Partly Cloudy</span>
+            </div>
+
+            <div class="weather-item">
+                <span class="label">Wind:</span>
+                <span class="value">12 km/h NE</span>
+            </div>
+
+            <div class="weather-item">
+                <span class="label">Wind Chill:</span>
+                <span id="windChill" class="value">N/A</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>🎸Jesús Eduardo Pinta Molina🎸 Colombia</p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+</html>

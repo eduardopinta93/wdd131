@@ -1,0 +1,101 @@
+:root{
+    --main-color: #875801;
+    --secundary-color: #1e00ff;
+    --secundary-color-transparency: rgba(30, 0, 255, 0.8);
+    --background-color-transparency: rgba(255, 255, 255, 0.8);
+}
+body{
+    font-family: inter;
+}
+header{
+    background-color: var(--main-color);
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+    border-bottom: 15px solid #1e00ff;
+    font-size: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+picture img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #1e00ff;
+}
+.weather-icon-large{
+    display: none;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.label{
+    font-weight: bold;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    border-top: 1px solid #b8bab9;
+}
+.weather-icon-mobile{
+    max-width: 25%;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+@media(min-width: 600px){
+    main{
+        position: relative;
+    }
+    main picture{
+        width: 100%;
+        display: block;
+    }
+    picture img{
+        border-bottom: none;
+    }
+    .weather-icon-mobile{
+        display: none;
+    }
+    .weather h2::after {
+        content: "⛅"; 
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .data{
+        position: absolute;
+        background-color: var(--background-color-transparency);
+        top: 35px;
+        left: 25px;
+        padding: 1rem;
+    }
+    .weather{
+        position: absolute;
+        background-color: var(--background-color-transparency);
+        bottom: 35px;
+        right: 25px;padding: 1rem;
+    }
+    .data h2, .weather h2{
+        width: 80%; 
+        margin-left: -70px; 
+        margin-right: 0; 
+        padding: 0.5rem 1rem; 
+        background-color: var(--secundary-color-transparency);
+        color: white;
+    }
+    footer{
+        padding: 1rem;
+    }
+}
