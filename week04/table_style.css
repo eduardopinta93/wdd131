@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    
+}
+caption{
+    caption-side: bottom;
+}
+thead{
+    color: white;
+    background-color: black;
+}
+.cabeza{
+    background-color: #474545;
+    border: 1px solid #703131;
+}
+tr td {
+    border: 1px solid #703131;
+}
+thead tr{
+    border: 1px solid #703131;
+}
+tbody tr:nth-child(odd) {
+	background-color: #e86666;
+}

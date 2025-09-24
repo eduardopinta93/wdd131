@@ -1,0 +1,91 @@
+:root{
+    --main-color: #4a1d8a;
+    --secondary-color: white;
+    --main-font: 'Roboto Slab', sans-serif;
+}
+body{
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+.nav-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+  margin-left: auto; 
+}
+nav ul{
+    display: none;
+    list-style: none;
+    flex-direction: column;
+}
+nav ul.open{
+    display: flex;
+}
+#hamburguer{
+    width: 2rem;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    padding: 0.4rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: auto;
+}
+nav a{
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+nav a:hover{
+    background-color: #110642;
+    border-radius: 7px;
+}
+.gallery{
+    display: grid;
+    justify-items: center;
+}
+main h2{
+        text-align: center;
+}
+footer{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+.gallery section {
+    background-color: #f3f0ff; 
+    padding: 1rem;
+    border-radius: 10px;       
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+.gallery section img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+
+
+
+
+
