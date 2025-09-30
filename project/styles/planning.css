@@ -1,0 +1,54 @@
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fdf6e3; 
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif; 
+    color: #d4af37; 
+}
+
+h1 {
+    background-color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    background-color: #000000;
+    font-size: 2rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+p {
+    margin-bottom: 1em;
+}
+
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    
+    font-style: 'Cinzel', serif;
+    margin-top: 5px;
+    color: #032f5c; 
+}
+
+
+
+
