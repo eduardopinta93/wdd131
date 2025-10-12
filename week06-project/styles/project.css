@@ -1,0 +1,480 @@
+:root {
+    --gold: #d4af37;
+    --terracotta: black;
+    --lapis: #26619c;
+    --heading-font: "Cinzel", serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--terracotta);
+    color: var(--gold);
+    font-family: var(--body-font);
+}
+
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--gold);
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+}
+
+#hamburger:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+
+nav ul {
+    display: none; 
+    list-style: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background-color: var(--terracotta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+nav ul.open {
+    display: flex !important; 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--gold);
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #751104;
+    border-radius: 5px;
+}
+
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+footer {
+    background-color: var(--terracotta);
+    color: var(--gold);
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--body-font);
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+main {
+    padding: 1rem;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+        url('../images/egipto.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+main section {
+    margin: 2rem 0;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.card {
+    background-color: var(--terracotta); 
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(193, 66, 14, 1);
+}
+
+
+.card h3 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.5rem;
+}
+
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: var(--lapis);
+}
+
+.early-life {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/geroglificos.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+#intro h2{
+    background-color: black;
+}
+#intro p{
+    background-color: black;
+}
+.early-life #intro img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#timeline h2{
+    background-color: black;
+}
+
+.early-life .timeline {
+    background-color: black;
+    list-style: none;
+    padding-left: 1rem;
+    border-left: 3px solid var(--gold);
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.early-life .timeline li {
+    margin: 1rem 0;
+}
+
+
+.early-life #quote blockquote {
+    background-color: black;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-top: 1.5rem;
+}
+
+.early-life #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.early-life #intro img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin-top: 1rem;
+}
+
+.early-life #intro h2 {
+    font-family: var(--heading-font);
+    color: var(--gold);
+}
+
+.early-life #intro p {
+    font-family: var(--body-font);
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+
+.hieroglyphs {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/rosetta_stone.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.hieroglyphs h2 {
+    text-align: center;
+    color: var(--gold);
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+    background-color: black;
+}
+
+.hieroglyphs p, 
+.hieroglyphs li {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.hieroglyphs img {
+    width: 90%;
+    max-width: 320px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin: 1rem auto;
+}
+
+.hieroglyphs ol {
+    text-align: left;
+    margin: 1rem auto;
+    padding-left: 1.5rem;
+    max-width: 600px;
+}
+
+#reflection blockquote {
+    background-color: black;
+    font-style: italic;
+    color: var(--gold);
+    border-left: 4px solid var(--gold);
+    padding-left: 1rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+#process{
+    text-align: center;
+}
+
+
+.hieroglyphs #discovery {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 1rem !important;
+  padding: 1rem !important;
+}
+
+
+.hieroglyphs #discovery > h2,
+.hieroglyphs #discovery > p,
+.hieroglyphs #discovery > img {
+  display: block !important;
+  float: none !important;
+  margin: 0.5rem auto !important;
+}
+
+
+.hieroglyphs #discovery > h2  { order: 1 !important; }
+.hieroglyphs #discovery > p   { order: 2 !important; max-width: 600px; line-height: 1.6; }
+.hieroglyphs #discovery > img { order: 3 !important; width: 90%; max-width: 320px; height: auto; border-radius: 10px; }
+
+
+.hieroglyphs #discovery > img {
+  position: static !important;
+  transform: none !important;
+}
+
+main.legacy {
+    background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+        url('../images/legacy.png') no-repeat center center;
+    background-size: cover;
+    color: var(--gold);
+    text-align: center;
+    font-family: var(--body-font);
+    padding: 2rem 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.legacy section {
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.legacy h2 {
+    font-family: var(--heading-font);
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.legacy img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.legacy ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.legacy li::before {
+    content: "★ ";
+    color: var(--gold);
+}
+
+.legacy blockquote {
+    font-style: italic;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+#contact {
+  margin-top: 3rem;
+  background-color: black;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+  color: var(--gold);
+}
+
+#contact h2 {
+  font-family: var(--heading-font);
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: var(--body-font);
+}
+
+#contact label {
+  text-align: left;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 5px var(--gold);
+}
+
+#contact button {
+  background-color: var(--gold);
+  color: var(--terracotta);
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#contact button:hover {
+  background-color: #f0c75e;
+  transform: scale(1.05);
+}
+
+
+#references {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+
+#references h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+
+#references p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#references ul {
+    list-style: disc;
+    margin-left: 2rem;
+    line-height: 1.6;
+}
+
+#references li {
+    margin-bottom: 0.8rem;
+    color: #f0f0f0;
+}
+
+#references a {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+#references a:hover {
+    color: var(--lapis);
+}
+#link{
+    color: #fff;
+}
